@@ -93,12 +93,6 @@ nav img{
     background : #f44336;
     transition : 1s;
 }
-/* .nav.fa{
-    display: none;
-} */
-/* .material-icons{
-visibility: hidden;
-} */
 #hide{
     visibility: hidden;
 }
@@ -114,7 +108,7 @@ visibility: hidden;
     position : absolute;
     background: #816a3e;
     height: 100vh;
-    width: 150px;
+    width: 200px;
     top:0;
     right:-200px;
     text-align: center;
@@ -129,14 +123,7 @@ visibility: hidden;
         font-size : 22px;
         cursor : pointer;
     }
-    /* .material-icons{
-    visibility: visible;
-    display : block;
-    color : #fff;
-    margin : 10px;
-    font-size : 22px;
-    cursor : pointer;
-    } */
+    
     .nav-links ul{
         padding : 30px;
     }
@@ -227,15 +214,11 @@ p{
     background: rgba(247, 153, 153, 0.7);
 }
 .layer h3{
-    width: 100px;
-    font-weight: 500;
     color: #fff;
     font-size: 26px;
-    bottom: 0;
-    left: 27%;
     right: 10%;
     transition: translateX(-50%);
-    position: absolute;
+    position:static;
     opacity: 0;
     transition: 0.5s;
 }
@@ -251,10 +234,15 @@ p{
 }
 @media(max-width:700px){
     .tripole-says img{
-        margin-left: 5px;
-        margin-right: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
+    .layer h3{
+        text-align: center;
 }
+
 /* ----call to action---- */
 .cta{
     margin:100px auto;
@@ -288,12 +276,7 @@ p{
     margin-top: 20px;
     font-weight: 600;
 }
-/* .icons.fa{
-    color: #f44336;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-} */
+
 .fa-facebook{
     color: #f44336;
     margin: 0 13px;
